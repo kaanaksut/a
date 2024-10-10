@@ -1,0 +1,20 @@
+/* Formun düzgün hizalanması için eklenen stiller */
+.task-form-container {
+  position: absolute;
+  right: 20px; /* Sağda hizalanacak */
+  top: 20px;   /* Yukarıdan hizalanacak */
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  z-index: 100;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  position: relative; /* Formun konumunu ayarlamak için relative */
+}

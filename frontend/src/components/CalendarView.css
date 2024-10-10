@@ -1,0 +1,13 @@
+.calendar-view {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.calendar-view h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}

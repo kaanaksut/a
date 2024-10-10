@@ -1,0 +1,174 @@
+.inbox-container {
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  color: #000;  /* Sekmelerin yazı rengi siyah olacak */
+  transition: all 0.3s ease; /* Smooth transition added for hover effects */
+}
+
+.tab-button:hover {
+  background-color: #e0e0e0; /* Hover effect for tabs */
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-button,
+.clear-button,
+.customize-button {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #000;
+}
+
+.filter-button:hover,
+.clear-button:hover,
+.customize-button:hover {
+  background-color: #e0e0e0;
+}
+
+.inbox-content {
+  text-align: center;
+}
+
+.inbox-zero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.envelope-icon {
+  font-size: 50px;
+  color: #007bff; /* Renk modernize edildi */
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Filter Menü */
+.filter-menu {
+  position: absolute;
+  right: 180px;
+  top: 160px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Daha yumuşak bir gölge efekti */
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px; /* Daha geniş bir menü genişliği */
+  z-index: 100;
+  transition: all 0.3s ease-in-out; /* Daha yumuşak animasyon */
+}
+
+.filter-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-menu li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* İkon ile yazı arası boşluk */
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-menu li:hover {
+  background-color: #f0f0f0;
+  color: #007bff; /* ClickUp'a benzer hover rengi */
+}
+
+/* Customize Menü */
+.customize-menu {
+  position: absolute;
+  right: 20px;
+  top: 150px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  z-index: 100;
+}
+
+.customize-group {
+  margin-bottom: 20px;
+}
+
+.customize-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Checkbox ile yazı arası boşluk */
+}
+
+.display-mode-options {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around; /* Butonları genişlet */
+}
+
+.display-mode-btn {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  flex: 1; /* Butonları esnet */
+  text-align: center;
+}
+
+.display-mode-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.display-mode-btn:hover {
+  background-color: #e0e0e0;
+}

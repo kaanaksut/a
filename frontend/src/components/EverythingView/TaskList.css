@@ -1,0 +1,50 @@
+.task-list-container {
+  padding: 20px;
+}
+
+.list-options-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-options-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown menünün Task Options butonunun altında çıkması için stil */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Butonun hemen altında olacak şekilde ayarlar */
+  left: 0; /* Butonun sol tarafına hizalar */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1000; /* Menü diğer öğelerin üstünde görünmesi için */
+  width: 220px; /* Menü genişliği */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+/* Dropdown menüdeki butonlar */
+.dropdown-menu button {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Dropdown menüdeki butonların hover efekti */
+.dropdown-menu button:hover {
+  background-color: #e2e8f0;
+}

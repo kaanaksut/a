@@ -1,0 +1,211 @@
+/* ---- Sidebar ---- */
+.sidebar {
+  width: 250px;
+  background-color: #1f1f1f; /* Koyu arka plan rengi */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #f4f4f4; /* Açık yazı rengi */
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar-item:hover {
+  background-color: #e2e8f0; /* Hover durumu */
+}
+
+.sidebar-item.active {
+  background-color: #3b82f6; /* Aktif eleman için arka plan */
+  color: white; /* Aktif elemanın yazısı beyaz */
+}
+
+.sidebar-item .icon {
+  margin-right: 10px;
+  color: #f4f4f4; /* İkon rengi de açık renk olmalı */
+  font-size: 18px; /* İkon büyüklüğü */
+}
+
+/* ---- Spaces Başlığı ---- */
+.spaces-header {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.spaces-header h3 {
+  color: #f4f4f4; /* Spaces başlığını da daha açık hale getirelim */
+}
+
+/* ---- Space-item Stilleri ---- */
+.space-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #f4f4f4; /* Space öğeleri için de açık renk */
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+}
+
+.space-item.active {
+  background-color: #333333; /* Aktif space için koyu arka plan */
+  color: #ffffff; /* Aktif space yazısı beyaz */
+}
+
+.space-item .icon {
+  margin-right: 10px;
+  color: #f4f4f4; /* Space ikonları için de açık renk */
+}
+
+/* ---- Dropdown Menü ---- */
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  top: 70px; /* Menü açıldığında konumlandırma */
+  left: 0;
+  z-index: 1000;
+  width: 200px;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333; /* Menü içindeki yazılar */
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu ul hr {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 10px 0;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #333;
+}
+
+/* ---- Genel Stil ---- */
+.icon-button-group {
+  display: flex;
+  gap: 8px; /* Gerekli olan doğru mesafe burada */
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease;
+}
+
+.icon-button:hover {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 4px;
+}
+
+.icon-button .icon {
+  font-size: 13px;
+  color: #999;
+}
+
+/* ---- Modal Tasarımı ---- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Arkaplanı bulanıklaştırmak için */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Modal'ın önde görünmesi için */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modal'a gölge ekleyerek vurgulama */
+  color: #333; /* Yazıların daha belirgin görünmesi için daha koyu renk */
+}
+
+/* Yazıların stili */
+.space-form label, .space-form input, .space-form textarea {
+  color: #333; /* Yazıların rengini daha koyu hale getirelim */
+}
+
+.space-form input,
+.space-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333; /* Yazıları daha belirgin yapmak için */
+}
+
+/* Buton stili */
+.modal-button {
+  background-color: #ddd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-button-primary {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-button-primary:hover {
+  background-color: #2563eb;
+}
+
+.modal-button:hover {
+  background-color: #ccc;
+}

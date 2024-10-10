@@ -1,0 +1,92 @@
+.chat-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa; /* Daha belirgin bir arka plan rengi */
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #343a40; /* Daha koyu bir arka plan rengi */
+  color: white; /* Yazı rengini beyaz yapalım */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-item {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* Ana sohbet alanı için beyaz arka plan */
+  border-left: 1px solid #ddd; /* Kenar çubuğu ile ana alanı ayıran çizgi */
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f1f1f1; /* Başlık alanı için açık gri arka plan */
+}
+
+.chat-header-icons span {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.empty-chat {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background-color: #f1f1f1; /* Alt kısım için açık gri arka plan */
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chat-footer button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-footer button:hover {
+  background-color: #0056b3;
+}
+
+.chat-message {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

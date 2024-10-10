@@ -1,0 +1,221 @@
+/* Genel görünüm */
+.everything-container {
+  padding: 20px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.everything-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* View butonları için stil */
+.view-buttons {
+  display: flex;
+  gap: 10px; /* Butonlar arasındaki boşluğu arttırmak için gap ekliyoruz */
+  margin-bottom: 20px; /* Butonların altına boşluk ekliyoruz */
+}
+
+.view-buttons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-buttons button:hover {
+  background-color: #0056b3; /* Hover efektiyle renk değişimi */
+}
+
+.view-buttons button.active {
+  background-color: #0056b3; /* Aktif olan buton daha koyu olacak */
+}
+
+.view-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Dropdown menü stili */
+.dropdown-menu {
+  position: absolute;
+  top: 240px; /* Aşağı doğru kaydırmak için artırıldı */
+  left: 240px; /* Daha sağa kaydırmak için artırıldı */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000; /* Menü diğer öğelerin üstünde olsun */
+  width: 220px; /* Menü genişliği */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.dropdown-menu button {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333; /* Yazıların görünür olması için koyu renk */
+  font-size: 14px;
+}
+
+.dropdown-menu button:hover {
+  background-color: #e2e8f0;
+}
+
+/* Toggle switchler için stil */
+.dropdown-menu .toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.dropdown-menu .toggle input {
+  margin-left: 10px;
+}
+
+.dropdown-menu .submenu {
+  padding-left: 15px;
+}
+
+/* Filtreler için stil */
+.filters {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.filters button {
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 12px;
+}
+
+.filters button:hover {
+  background-color: #e2e8f0;
+}
+
+/* Filtre butonlarını hemen altına yerleştirme */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px; /* Butonların hemen altında olacak */
+}
+
+.filter-btn {
+  padding: 8px 12px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.filter-btn:hover {
+  background-color: #e2e8f0;
+}
+
+/* Arama kutusu ve Add Task butonları */
+.task-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Elemanları sağ tarafa hizalar */
+  gap: 10px;
+  margin-right: 10px; /* Sağdan biraz boşluk bırak */
+  margin-top: -70px; /* Yukarı doğru hareket ettirir */
+}
+
+.search-bar {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  width: 250px;
+  margin-right: 15px; /* Buton ve arama çubuğu arasındaki boşluk */
+}
+
+.add-task-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.add-task-btn:hover {
+  background-color: #218838;
+}
+
+/* Görev Listesi */
+.everything-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.task-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.task-item p {
+  color: #666;
+}
+
+/* Genel buton ve ikon stili */
+.buttons {
+  margin: 10px 0;
+}
+
+.icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.view-content {
+  margin-top: 20px;
+}

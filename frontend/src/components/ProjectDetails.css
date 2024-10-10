@@ -1,0 +1,14 @@
+.project-details {
+    padding: 20px;
+  }
+  
+  .task-list {
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
